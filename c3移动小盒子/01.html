@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .content{
+            width: 100px;
+            height: 100px;
+            margin: 100px auto;
+            border: 2px solid #ccc;
+        }
+        .box{
+            width: 100px;
+            height: 2px;
+            background-color: blue;
+            float: left;
+            animation: run 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes run{
+            0%{
+                transform: translate3d(0,0,0)
+            }
+            100%{
+                visibility: hidden;
+                transform: translate3d(0,98px,0)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
